@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- <title></title> -->
+  <meta charset="utf-8">
+  <!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
+  <link rel="stylesheet" href="css/bootstrap-3.3.7.min.css">
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap-3.3.7.min.js"></script>
+  <style>
+    body {
+        font-size: 16px;
+        width: 620px;
+        height: 495px;
+    }
+    .tab-pane {
+      width: 620px;
+      overflow: auto;
+      white-space: nowrap;
+    }
+    </style>
+</head>
+<body>
+<ul class="nav nav-tabs" role="tablist">
+  <li role="presentation" class="active"><a href="#domain" role="tab" data-toggle="tab">域名</a></li>
+  <li role="presentation"><a href="#network" role="tab" data-toggle="tab">网络请求</a></li>
+  <li role="presentation"><a href="#crossOrigin" role="tab" data-toggle="tab">跨域请求</a></li>
+  <li role="presentation"><a href="#localUrl" role="tab" data-toggle="tab">html源代码存在链接</a></li>
+  <li role="presentation"><a href="#externalUrl" role="tab" data-toggle="tab">外部js文件存在链接</a></li>
+</ul>
+
+<div class="tab-content">
+  <div role="tabpanel" class="tab-pane active" id="domain">
+    <div id="domainDatasDv"></div>
+  </div>
+  <div role="tabpanel" class="tab-pane" id="network">
+    <div id="networkDatasDv"></div>
+  </div>
+  <div role="tabpanel" class="tab-pane" id="crossOrigin">
+    <div id="crossOriginDatasDv"></div>
+  </div>
+  <div role="tabpanel" class="tab-pane" id="localUrl">
+    <div id="localUrlDatasDv"></div>
+  </div>
+  <div role="tabpanel" class="tab-pane" id="externalUrl">
+    <div id="externalUrlDatasDv"></div>
+    <div class="accordion-group"></div>
+  </div>
+
+</div>
+
+<script src="js/popup.js"></script>
+</body>
+</html>

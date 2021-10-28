@@ -1,0 +1,40 @@
+{
+    "name": "UrlFinder",
+    "description" : "查找html源代码和js源代码中的url、domain，以及当前网站的网络请求记录。",
+    "version": "1.0",
+    "manifest_version": 2,
+    "background":{
+    	"scripts": [
+      "js/background.js",
+      "js/jquery-3.4.1.min.js",
+      "js/bootstrap-3.3.7.min.js"
+      ],
+    	"persistent":true
+    },
+    "permissions":[
+      "activeTab",
+      "tabs",
+      "http://*/*",
+      "https://*/*",
+      "storage",
+      "notifications",
+      "webRequest",
+      "webRequestBlocking"
+    ],
+    "browser_action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "images/get_started16.png",
+        "32": "images/get_started32.png",
+        "48": "images/get_started48.png",
+        "128": "images/get_started128.png"
+      }
+    },
+    "icons": {
+      "16": "images/get_started16.png",
+      "32": "images/get_started32.png",
+      "48": "images/get_started48.png",
+      "128": "images/get_started128.png"
+    }
+    
+}
